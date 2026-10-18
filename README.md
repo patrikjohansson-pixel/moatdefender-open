@@ -16,7 +16,7 @@ Install in one step (Claude Code 2.1.275 or later):
 | Moat CLI (`tools/moat-cli`) and the release action (`tools/github-action`) | Sign-in **and a Pro or Ultra subscription**, API key in the environment | Private VIP beta, by invitation |
 | Original Minds Club membership | An application. **Joining the waitlist is free.** Expected waiting time: 3 to 4 weeks. | Yes: [moatdefender.com/apply/membership](https://moatdefender.com/apply/membership) |
 
-Pro and Ultra are a private VIP beta during the founding season; invitations come from the team. Nothing in this repository
+Enforced server-side: an Original Minds (starter) account gets a 403 `plan` refusal on every key, the CLI and the account tools; the public method tools need nothing. Pro and Ultra are a private VIP beta during the founding season; invitations come from the team. Nothing in this repository
 computes a Moat Index: readings run on MoatDefender's servers under a closed method, and this code only talks to them.
 
 The plugin connects the public MoatDefender MCP server at `https://moatdefender.com/api/mcp` (tools `moat_method`

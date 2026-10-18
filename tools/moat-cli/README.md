@@ -5,6 +5,8 @@ It is a local source deliverable; it has not been published to npm or tested aga
 
 Run `node integrations/moat-cli/moat.mjs help` from the repository root. The local package declares a `moat` bin
 for owners who choose to link/install this reviewed folder; no install is required for the Node commands below.
+The CLI works only for a signed-in account on a Pro or Ultra plan (a private VIP beta by invitation); an Original
+Minds account gets a 403 `plan` refusal, while the public method tools need nothing and the club waitlist is free.
 The owner supplies `MOATDEFENDER_API_KEY` privately in the process environment. Do not paste keys into commands,
 arguments, source, config, URLs or logs. The CLI does not load dotenv or inspect email/session credentials.
 `MOATDEFENDER_URL` can select an owner-trusted HTTPS origin (default `https://moatdefender.com`); paths,
