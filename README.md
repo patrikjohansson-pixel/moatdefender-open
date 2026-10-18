@@ -7,6 +7,18 @@ Install in one step (Claude Code 2.1.275 or later):
 /plugin install moatdefender --marketplace patrikjohansson-pixel/moatdefender-open
 ```
 
+## Access: what works without an account, and what needs one
+
+| | Needs | Works today |
+|---|---|---|
+| Public method tools (`moat_method`, `moat_power`) over MCP | Nothing. No account, no key. | Yes |
+| Account tools over MCP (`moat_latest`, `moat_add_evidence`, `moat_reread`, `moat_next_moves`) | Sign-in **and a Pro or Ultra subscription**, plus an API key from your account | Private VIP beta, by invitation |
+| Moat CLI (`tools/moat-cli`) and the release action (`tools/github-action`) | Sign-in **and a Pro or Ultra subscription**, API key in the environment | Private VIP beta, by invitation |
+| Original Minds Club membership | An application. **Joining the waitlist is free.** Expected waiting time: 3 to 4 weeks. | Yes: [moatdefender.com/apply/membership](https://moatdefender.com/apply/membership) |
+
+Pro and Ultra are a private VIP beta during the founding season; invitations come from the team. Nothing in this repository
+computes a Moat Index: readings run on MoatDefender's servers under a closed method, and this code only talks to them.
+
 The plugin connects the public MoatDefender MCP server at `https://moatdefender.com/api/mcp` (tools `moat_method`
 and `moat_power`, no account, no key) and adds two skills: `moat-reading` and `moat-ci`. Also in this repository:
 `tools/moat-cli` (Node CLI), `tools/codex` (AGENTS snippet and MCP config for Codex) and `tools/github-action`
