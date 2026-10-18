@@ -1,0 +1,18 @@
+{
+  "name": "moatdefender",
+  "owner": { "name": "MoatDefender", "url": "https://moatdefender.com" },
+  "metadata": { "description": "MoatDefender for Claude Code: discuss moats and defensibility with the public method tools, and collect release evidence with Moat CI." },
+  "plugins": [
+    {
+      "name": "moatdefender",
+      "source": "./",
+      "description": "Moat, defensibility and copycat discussions grounded in the MoatDefender method; Moat CI release evidence with explicit authorization for any paid re-read.",
+      "version": "0.1.0",
+      "author": { "name": "MoatDefender", "url": "https://moatdefender.com" },
+      "homepage": "https://moatdefender.com/connect",
+      "license": "MIT",
+      "keywords": ["moat", "moat index", "defensibility", "startup", "due diligence", "mcp"],
+      "category": "productivity"
+    }
+  ]
+}

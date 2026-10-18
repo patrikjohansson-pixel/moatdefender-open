@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "moatdefender-account": {
+      "type": "http",
+      "url": "https://moatdefender.com/api/mcp",
+      "headers": { "Authorization": "Bearer ${MOATDEFENDER_API_KEY}" }
+    }
+  }
+}

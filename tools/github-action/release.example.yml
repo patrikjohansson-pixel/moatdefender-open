@@ -1,0 +1,22 @@
+# PROPOSED EXAMPLE: publish/review this integration and replace the pinned reference first.
+name: Record release moat evidence
+on:
+  release:
+    types: [published]
+permissions:
+  contents: write # create a comment on the release's commit
+jobs:
+  moat:
+    if: github.event.repository.fork == false
+    runs-on: ubuntu-latest
+    steps:
+      # No checkout: release content and repository code are never executed.
+      - uses: YOUR_ORG/YOUR_REVIEWED_REPOSITORY/integrations/github-action@REPLACE_WITH_REVIEWED_40_CHARACTER_COMMIT_SHA
+        with:
+          dossier-id: ${{ vars.MOATDEFENDER_DOSSIER_ID }}
+          reread: 'false'
+          # To opt in explicitly: reread: 'true' AND max-tokens: '150'.
+          max-tokens: '0'
+        env:
+          MOATDEFENDER_API_KEY: ${{ secrets.MOATDEFENDER_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}

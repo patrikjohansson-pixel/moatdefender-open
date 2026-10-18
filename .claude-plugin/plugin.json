@@ -1,0 +1,20 @@
+{
+  "name": "moatdefender",
+  "version": "0.1.0",
+  "description": "Discuss moats, defensibility, copycats and AI-era durability with MoatDefender's public method tools; collect release evidence with Moat CI and explicitly authorize any paid re-read.",
+  "author": {
+    "name": "MoatDefender",
+    "url": "https://moatdefender.com"
+  },
+  "homepage": "https://moatdefender.com/connect",
+  "license": "MIT",
+  "keywords": [
+    "moat",
+    "moat index",
+    "defensibility",
+    "startup",
+    "seven powers",
+    "due diligence"
+  ],
+  "repository": "https://github.com/patrikjohansson-pixel/moatdefender-open"
+}

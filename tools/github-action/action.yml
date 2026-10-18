@@ -1,0 +1,26 @@
+name: Moat CI release evidence
+description: Proposed release-only evidence integration; an optional re-read requires explicit budget consent.
+inputs:
+  dossier-id:
+    description: Owned MoatDefender dossier ID
+    required: true
+  reread:
+    description: Explicitly authorize a paid re-read after the cost quote (true or false)
+    default: 'false'
+  max-tokens:
+    description: Maximum quoted MoatTokens accepted for the optional re-read; also restrict the key monthly budget
+    default: '0'
+outputs:
+  result:
+    description: Evidence and reading state, with token charge
+    value: ${{ steps.moat.outputs.result }}
+runs:
+  using: composite
+  steps:
+    - id: moat
+      shell: bash
+      env:
+        MOAT_DOSSIER_ID: ${{ inputs.dossier-id }}
+        MOAT_REREAD: ${{ inputs.reread }}
+        MOAT_MAX_TOKENS: ${{ inputs.max-tokens }}
+      run: node "$GITHUB_ACTION_PATH/action.mjs"

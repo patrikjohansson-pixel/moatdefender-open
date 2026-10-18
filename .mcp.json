@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "moatdefender": {
+      "type": "http",
+      "url": "https://moatdefender.com/api/mcp"
+    }
+  }
+}
